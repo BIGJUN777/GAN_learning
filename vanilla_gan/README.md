@@ -1,0 +1,3 @@
+## Training Logs
+- batchnorm in discriminator生成效果很差，可能原因是从generator生成的batchsize的fake数据经过batchnorm后数据分布与真实数据分布类似，故discriminator训练较差导致整个系统训练较差；
+- 借鉴gcGAN，discriminator中第一层不加batchnorm效果不错；
